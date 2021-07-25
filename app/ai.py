@@ -1,3 +1,4 @@
+# import the necessary packages
 import time
 import cv2
 import numpy as np
@@ -88,18 +89,32 @@ def yolo_forward(net, LABELS, image, confidence_level, save_image=False):
 
     # apply non-maxima suppression to suppress weak, overlapping bounding
     # boxes
-    # idxs = cv2.dnn.NMSBoxes(boxes, confidences, confidence_level, threshold)
-
+    idxs = cv2.dnn.NMSBoxes(boxes, confidences, confidence_level, confidence_level)
+    
+    
     print(class_ids)
-    print(LABELS)
-    # print(labels)
+    print(boxes)
+    print(confidences)
+    print(idxs)
+    
+    if len(idxs) > 0:
+        filtered_idxs = idxs[0]
+        print('after NMS, we have these indices')
+        print(filtered_idxs)
+    else:
+        filtered_idxs = []
+    
 
-    labels = [LABELS[i] for i in class_ids]
+    nms_class_ids = [class_ids[i] for i in filtered_idxs]
+    nms_boxes = [boxes[i] for i in filtered_idxs]
+    nms_confidences = [confidences[i] for i in filtered_idxs]
+
+    labels = [LABELS[i] for i in nms_class_ids]
 
     if save_image:
-        yolo_save_img(image, class_ids, boxes, labels, confidences, colors, 'python_predictions.jpg')
+        yolo_save_img(image, class_ids, nms_boxes, labels, confidences, colors, 'python_predictions.jpg')
 
-    return class_ids, labels, boxes, confidences
+    return nms_class_ids, labels, nms_boxes, nms_confidences
 
 
 def yolo_save_img(image, class_ids, boxes, labels, confidences, colors, file_path):
