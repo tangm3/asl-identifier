@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css')}}"media="screen">
 <link rel="stylesheet" href="{{ url_for('static', filename='Home.css') }}" media="screen">
     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
@@ -31,9 +31,9 @@
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-sticky u-sticky-7546 u-white u-header" id="sec-3277"><div class="u-clearfix u-sheet u-sheet-1">
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-header u-sticky u-sticky-7546 u-white u-header" id="sec-3277"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://www.ai-camp.org/" class="u-image u-logo u-image-1" data-image-width="216" data-image-height="220" title="AI-Camp-Logo" target="_blank">
-          <img src="{{ url_for('static', filename='images/ai_camp_logo.webp')}}" class="u-logo-image u-logo-image-1">
+          <img src="{{ url_for('static', filename='images/ai_camp_logo.webp')}}" class="u-logo-image u-logo-image-1" data-image-width="64">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse u-custom-font u-font-raleway" style="font-size: 1.125rem; letter-spacing: 0px;">
@@ -45,7 +45,7 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-custom-font u-font-raleway u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ url_for('home') }}" style="padding: 10px 15px;">Home</a>
+            <ul class="u-custom-font u-font-raleway u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 15px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#About" data-page-id="695730524" style="padding: 10px 15px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#sec-816c" data-page-id="695730524" style="padding: 10px 15px;">Learn ASL</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html#sec-957f" data-page-id="695730524" style="padding: 10px 15px;">Resources</a>
@@ -58,7 +58,7 @@
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ url_for('home') }}" style="padding: 10px 15px;">Home</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" style="padding: 10px 15px;">Home</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#About" data-page-id="695730524" style="padding: 10px 15px;">About</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#sec-816c" data-page-id="695730524" style="padding: 10px 15px;">Learn ASL</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html#sec-957f" data-page-id="695730524" style="padding: 10px 15px;">Resources</a>
@@ -76,18 +76,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-custom-font u-font-raleway u-text u-text-default u-title u-text-1">American Sign Language Classifier</h1>
         <p class="u-custom-font u-font-raleway u-large-text u-text u-text-default u-text-variant u-text-2">An AI Program Designed to Identify ASL Hand Signs in Pictures</p>
-         <!--     button added for uploading a photo    -->
-        <div class="mbr-buttons--left">
-            <div class="mbr-section-btn">
-                <a class="u-border-none u-btn u-button-style u-custom-font u-font-raleway u-grey-80 u-hover-white u-btn-1" href='#' id='seefood_button'>
-                    <form id='seefood_form' method=post enctype=multipart/form-data>
-                        <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
-                    </form>
-                    IMPORT IMAGE
-                </a>
-
-            </div>
-        </div>
+        <a href="#" class="u-border-none u-btn u-button-style u-custom-font u-font-raleway u-grey-80 u-hover-white u-btn-1">IMPORT IMAGE</a>
       </div>
     </section>
     <section class="u-clearfix u-section-2" id="About">
@@ -96,7 +85,7 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-custom-background u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="200" data-image-height="200" src="{{ url_for('static', filename='images/I_example.jpeg')}}">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="200" data-image-height="200" src="{{ url_for('static', filename='images/I_example.jpeg')}}" class="u-logo-image u-logo-image-1" data-image-width="64">
                 <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-1">Project Overview</h3>
                 <p class="u-custom-font u-custom-item u-font-raleway u-text u-text-2"> Our model takes in photos of ASL hand signs as input and accurately identifies them with a letter label and bounding box.</p>
                 <ul class="u-custom-font u-custom-item u-font-raleway u-text u-text-3">
@@ -106,7 +95,7 @@
             </div>
             <div class="u-container-style u-custom-background u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="200" data-image-height="200" src="{{ url_for('static', filename='images/U_example.jpeg')}}">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="200" data-image-height="200" src="{{ url_for('static', filename='images/U_example.jpeg')}}" class="u-logo-image u-logo-image-1" data-image-width="64">
                 <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-4">For Best Results</h3>
                 <p class="u-custom-font u-custom-item u-font-raleway u-text u-text-5">For our model to perform at its best, please follow the criteria below when uploading images:</p>
                 <ul class="u-custom-font u-custom-item u-font-raleway u-text u-text-6">
@@ -121,7 +110,7 @@
             </div>
             <div class="u-container-style u-custom-background u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="351" data-image-height="288" src="{{ url_for('static', filename='images/asl_learn.png')}}">
+                <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="351" data-image-height="288" src="{{ url_for('static', filename='images/asl_learn.png')}}" class="u-logo-image u-logo-image-1" data-image-width="64">
                 <h3 class="u-custom-font u-font-raleway u-text u-text-default u-text-7">Applications</h3>
                 <p class="u-custom-font u-custom-item u-font-raleway u-text u-text-8"> Our AI model can be used to:</p>
                 <ul class="u-custom-font u-custom-item u-font-raleway u-text u-text-9">
@@ -206,7 +195,7 @@
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-rectangle u-icon-4"><img src="{{ url_for('static', filename='images/aicamp_icon1.png')}}" alt=""></span>
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-rectangle u-icon-4"><img src="{{ url_for('static', filename='images/aicamp_icon1.png'')}}" class="u-logo-image u-logo-image-1" data-image-width="64"></span>
                 <h3 class="u-align-center u-custom-font u-font-raleway u-text u-text-custom-color-4 u-text-default u-text-8">AI Camp</h3>
                 <p class="u-align-center u-custom-font u-font-raleway u-text u-text-default u-text-9"> AI Camp was where the team met and learned how to code Python under one week. From there, we started to build our ASL project.&nbsp;</p>
               </div>
@@ -292,9 +281,7 @@
             <div class="u-container-layout u-similar-container u-container-layout-6">
               <div alt="" class="u-image u-image-circle u-image-6" src="" data-image-width="500" data-image-height="500"></div>
               <h5 class="u-align-center u-custom-font u-font-raleway u-text u-text-12">Abhinav Hazarika</h5>
-              <p class="u-align-center u-custom-font u-font-raleway u-text u-text-13"><span style="font-style: italic;"> Jonathan Law High School | Milford, CT<br>
-                </span>
-                <br>Abhinav joined AI Camp to learn how AI works and how it can be applied to different scenarios. He's a photographer, plays the guitar, and loves adventures. His favorite part of the camp was learning how to use python libraries for data analysis and learning how to design the website's backend.
+              <p class="u-align-center u-custom-font u-font-raleway u-text u-text-13">Accountant-auditor</p>
             </div>
           </div>
           <div class="u-container-style u-list-item u-repeater-item">
@@ -349,31 +336,5 @@
         <span>Offline Website Builder</span>
       </a>. 
     </section>
-    
-    <!--     javascript added for uploading a photo    -->
-    <script>
-        // added to get upload with a button working
-        document.getElementById('seefood_button').addEventListener('click', openDialog);
-
-        function openDialog() {
-            document.getElementById('seefood_input_field').click();
-        }
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#spinner").bind("ajaxSend", function() {
-                $(this).show();
-            }).bind("ajaxStop", function() {
-                $(this).hide();
-            }).bind("ajaxError", function() {
-                $(this).hide();
-            });
-            // seefood_input_field
-            $('#seefood_button').click(function() {
-
-            });
-
-        });
-    </script>
   </body>
 </html>

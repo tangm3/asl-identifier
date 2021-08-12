@@ -5,7 +5,7 @@ import numpy as np
 from werkzeug.utils import secure_filename
 from flask import Flask, flash, request, redirect, url_for, render_template
 from flask import send_from_directory
-from ai import get_yolo_net, yolo_forward, yolo_save_img
+from ai2 import get_yolo_net, yolo_forward, yolo_save_img
 from utils import get_base_url, allowed_file, and_syntax
 
 # setup the webserver
@@ -14,15 +14,15 @@ from utils import get_base_url, allowed_file, and_syntax
     port may need to be changed if there are multiple flask servers running on same server
     comment out below three lines of code when ready for production deployment
 '''
-port = 12345
-base_url = get_base_url(port)
-app = Flask(__name__, static_url_path=base_url+'static')
+#port = 12345
+#base_url = get_base_url(port)
+#app = Flask(__name__, static_url_path=base_url+'static')
 
 '''
     cv scaffold code
     uncomment below line when ready for production deployment
 '''
-# app = Flask(__name__)
+app = Flask(__name__)
 
 UPLOAD_FOLDER = 'images'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -39,13 +39,13 @@ cfg_path = os.path.join('yolo', 'yolo.cfg')
 net = get_yolo_net(cfg_path, weights_path)
 
 
-#@app.route('/')
-@app.route(base_url)
+@app.route('/')
+#@app.route(base_url)
 def home():
     return render_template('home.html')
 
-#@app.route('/', methods=['POST'])
-@app.route(base_url, methods=['POST'])
+@app.route('/', methods=['POST'])
+#@app.route(base_url, methods=['POST'])
 def home_post():
     # check if the post request has the file part
     if 'file' not in request.files:
@@ -65,8 +65,8 @@ def home_post():
         return redirect(url_for('results', filename=filename))
 
 
-#@app.route('/uploads/<filename>')
-@app.route(base_url + '/uploads/<filename>')
+@app.route('/uploads/<filename>')
+#@app.route(base_url + '/uploads/<filename>')
 def results(filename): 
     image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     image = cv2.imread(image_path)
@@ -96,8 +96,8 @@ def results(filename):
         # replace 'Objects' with whatever you are trying to detect
         return render_template('results.html', labels='No Objects', old_filename=filename, filename=filename) 
 
-#@app.route('/files/<path:filename>')
-@app.route(base_url + '/files/<path:filename>')
+@app.route('/files/<path:filename>')
+#@app.route(base_url + '/files/<path:filename>')
 def files(filename):
     return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
 
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     coding center code
     '''
     # IMPORTANT: change the cocalcx.ai-camp.org to the site where you are editing this file.
-    website_url = 'cocalcx.ai-camp.org'
+    website_url = 'cocalc4.ai-camp.org'
     print(f"Try to open\n\n    https://{website_url}" + base_url + '\n\n')
 
     # remove debug=True when deploying it

@@ -1,0 +1,788 @@
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python4[K3 main.py
+Traceback (most recent call last):
+  File "main.py", line 8, in <module>
+    from ai2 import get_yolo_net, yolo_forward, yolo_save_img
+ModuleNotFoundError: No module named 'ai2'
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 15:40:44] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:44] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:44] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:44] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "[33mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/images/U_example.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "[33mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/images/I_example.jpeg HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "[33mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/images/asl_learn.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:40:45] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1" 200 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ clear
+[H[J]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ clearpython3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 15:54:13] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:54:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:55:04] "[32mPOST /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.621770 seconds
+[18, 18, 18, 18, 18, 18]
+[[106, 53, 187, 299], [94, 56, 216, 297], [84, 51, 236, 306], [106, 76, 189, 305], [90, 71, 228, 315], [79, 60, 247, 333]]
+[0.38116368651390076, 0.5199072957038879, 0.4924507439136505, 0.33439764380455017, 0.5129774212837219, 0.5174635052680969]
+[[1]]
+after NMS, we have these indices
+[1]
+S
+127.0.0.1 - - [12/Aug/2021 15:55:05] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/uploads/A2.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:55:05] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Results.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 15:55:05] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:55:05] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:55:05] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:55:05] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 15:55:06] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/confusion_matrix.jpg HTTP/1.1" 200 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ l[Kclear
+[H[J]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ clearpython3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:02:24] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:02:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:06:12] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:13] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:06:14] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ clear
+[H[J]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ clearpython3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:07:08] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:07:09] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:08:37] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:08:37] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:09:52] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:09:52] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+thttps://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/^[[B^[[B^[[A                                                                                         127.0.0.1 - - [12/Aug/2021 16:10:39] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:10:40] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+c ^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:36:11] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:12] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:17] "[32mPOST /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.579797 seconds
+[18, 18, 18, 18, 18, 18]
+[[106, 53, 187, 299], [94, 56, 216, 297], [84, 51, 236, 306], [106, 76, 189, 305], [90, 71, 228, 315], [79, 60, 247, 333]]
+[0.38116368651390076, 0.5199072957038879, 0.4924507439136505, 0.33439764380455017, 0.5129774212837219, 0.5174635052680969]
+[[1]]
+after NMS, we have these indices
+[1]
+S
+127.0.0.1 - - [12/Aug/2021 16:36:18] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/uploads/A2.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:36:18] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:18] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:18] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:18] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:18] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Results.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:19] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/confusion_matrix.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:24] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:36:25] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:38:50] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:50] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:51] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:55] "[32mPOST /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.581056 seconds
+[8, 8, 8]
+[[188, 158, 248, 419], [181, 144, 268, 450], [165, 136, 297, 461]]
+[0.5076825022697449, 0.45275887846946716, 0.3735450208187103]
+[[0]]
+after NMS, we have these indices
+[0]
+I
+127.0.0.1 - - [12/Aug/2021 16:38:56] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/uploads/A.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:38:56] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:56] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:56] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:56] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Results.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:56] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:38:57] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/files/yolo_A.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:38:57] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/confusion_matrix.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 16:39:58] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:58] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:39:59] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:03] "[32mPOST /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.603565 seconds
+[8, 8, 8]
+[[188, 158, 248, 419], [181, 144, 268, 450], [165, 136, 297, 461]]
+[0.5076825022697449, 0.45275887846946716, 0.3735450208187103]
+[[0]]
+after NMS, we have these indices
+[0]
+I
+127.0.0.1 - - [12/Aug/2021 16:40:04] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/uploads/A.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Results.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/confusion_matrix.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:04] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/files/yolo_A.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 16:40:17] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 17:02:26] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:02:26] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:26] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:27] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:29] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:52] "[32mPOST /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.609986 seconds
+[18, 18, 18, 18, 18, 18]
+[[106, 53, 187, 299], [94, 56, 216, 297], [84, 51, 236, 306], [106, 76, 189, 305], [90, 71, 228, 315], [79, 60, 247, 333]]
+[0.38116368651390076, 0.5199072957038879, 0.4924507439136505, 0.33439764380455017, 0.5129774212837219, 0.5174635052680969]
+[[1]]
+after NMS, we have these indices
+[1]
+S
+127.0.0.1 - - [12/Aug/2021 17:02:52] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/uploads/A2.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Results.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/files/yolo_A2.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:02:53] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/confusion_matrix.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:03:08] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 17:12:09] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:10] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:11] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/abhinav_photo.jpeg HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:12:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:12:11] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
+]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ [K]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12345/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/659eb571-eb16-4ec4-8573-a35325f65862/port/12345/
+
+
+ * Debugger is active!
+ * Debugger PIN: 110-790-276
+127.0.0.1 - - [12/Aug/2021 17:20:01] "GET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/ HTTP/1.1" 200 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/I_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ai_camp_logo.webp HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/U_example.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/asl_learn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:01] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/aicamp_icon1.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/homepage_bg.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/alphabet.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/IMG_6588.JPG HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/wei-lin.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/neil.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/brianne.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/tiana.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/abhinav_photo.jpeg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/ryan.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [12/Aug/2021 17:20:02] "[36mGET /659eb571-eb16-4ec4-8573-a35325f65862/port/12345/static/images/grp_zoom.png HTTP/1.1[0m" 304 -
+^C]0;~/cv-yolo-scaffold/app[01;34m~/cv-yolo-scaffold/app[00m$ 
