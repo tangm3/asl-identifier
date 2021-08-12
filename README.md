@@ -1,4 +1,4 @@
-# cv_yolo_scaffold
+# asl-identifier
 A scaffold for deploying dockerized flask applications showcasing student computer vision projects using yolo.
 
 ### File Structure
